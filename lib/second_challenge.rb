@@ -7,7 +7,11 @@ def second_challenge
   }
 
   #code your solution here!
-
-  
-
+  itemlist = []
+  groceries.each do |section, itemarray|
+    itemarray.each do |product|
+      itemlist << product
+    end
+  end
+  itemlist
 end
